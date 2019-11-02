@@ -1,4 +1,44 @@
 # MTL-SLAM
 Code for paper: [Multi-task Learning for Low-resource Second Language Acquisition Modeling](https://arxiv.org/abs/1908.09283)
 
-We will release our code as soon as possible.
+![](./images/model.png)
+
+More information about Second Language Acquisition Modeling(SLAM) can be found [here](http://sharedtask.duolingo.com/).
+
+## Quick Reproduce
+1. Download the processed dataset from [here](http://image.nghuyong.top/processed.zip) and move to `./data/processed`.
+
+2. Install dependencies
+```
+pip install -r requirements.txt
+```
+
+3. Train model
+
+```bash
+# multi-task model
+python -m models.multitask.run
+# single-task model
+python -m models.singletask.run
+```
+
+4. Test model
+```bash
+# multi-task model
+python -m models.multitask.run --train_or_test=test
+# single-task model
+python -m models.singletask.run --train_or_test=test
+```
+
+## Cite
+If you use this code, please cite the following paper:
+```
+@misc{hu2019multitask,
+    title={Multi-task Learning for Low-resource Second Language Acquisition Modeling},
+    author={Yong Hu and Heyan Huang and Tian Lan and Xiaochi Wei and Yuxiang Nie and Jiarui Qi and Liner Yang and Xian-Ling Mao},
+    year={2019},
+    eprint={1908.09283},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
