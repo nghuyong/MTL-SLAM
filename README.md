@@ -1,5 +1,5 @@
 # MTL-SLAM
-Code for paper: [Multi-task Learning for Low-resource Second Language Acquisition Modeling](https://arxiv.org/abs/1908.09283)
+Code for paper: Multi-task Learning for Low-resource Second Language Acquisition Modeling
 
 ![](./images/model.png)
 
@@ -28,17 +28,4 @@ python -m models.singletask.run
 python -m models.multitask.run --train_or_test=test
 # single-task model
 python -m models.singletask.run --train_or_test=test
-```
-
-## Cite
-If you use this code, please cite the following paper:
-```
-@misc{hu2019multitask,
-    title={Multi-task Learning for Low-resource Second Language Acquisition Modeling},
-    author={Yong Hu and Heyan Huang and Tian Lan and Xiaochi Wei and Yuxiang Nie and Jiarui Qi and Liner Yang and Xian-Ling Mao},
-    year={2019},
-    eprint={1908.09283},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
-}
 ```
